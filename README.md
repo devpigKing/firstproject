@@ -1,10 +1,10 @@
 # 스프링부트 3 자바 백엔드 개발 입문 책을 실습하는 공간입니다.
 
-**IDE** : IntelliJ
-**개발 언어** : Java 17
-**개발 환경** : SpringBoot 3.21 , gradle , jpa(Spring Data JPA), mustache
-**데이터베이스** : MySQL
-**형상관리 툴** : GitHub
+**IDE** : IntelliJ <br/>
+**개발 언어** : Java 17 <br/>
+**개발 환경** : SpringBoot 3.21 , gradle , jpa(Spring Data JPA), mustache <br/>
+**데이터베이스** : MySQL <br/>
+**형상관리 툴** : GitHub <br/>
 
 ## (실습1) 헤더-푸터 레이아웃을 적용한 명언 랜덤 페이지 
 
