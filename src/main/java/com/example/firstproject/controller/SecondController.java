@@ -21,6 +21,7 @@ public class SecondController {
                 "작은 기회로부터 종종 위대한 업적이 시작된다. " +
                         "-데모스테네스-"
         };
+
         int randInt = (int) (Math.random()* quotes.length);
         model.addAttribute("randomQuote", quotes[randInt]);
         return "random-quote";
