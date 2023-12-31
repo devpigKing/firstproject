@@ -9,3 +9,7 @@
 ## (실습1) 헤더-푸터 레이아웃을 적용한 명언 랜덤 페이지 
 
 ![image](https://github.com/devpigKing/firstproject/assets/137087678/60692a88-4bc7-4d94-99b1-dac25c1e95e2)
+
+## (실습2) 회원 가입 페이지 (MySQL 연동)
+
+![image](https://github.com/devpigKing/firstproject/assets/137087678/e1358089-dc86-4a10-ab10-008e9f69e482)
