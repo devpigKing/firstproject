@@ -1,8 +1,14 @@
 package com.example.firstproject.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
+@AllArgsConstructor
+@ToString
+@NoArgsConstructor
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,21 +20,4 @@ public class Member {
     @Column
     private int password;
 
-    public Member() {
-    }
-
-    public Member(Long id, String email, int password) {
-        this.id = id;
-        this.email = email;
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "Member{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
-                ", password=" + password +
-                '}';
-    }
 }
