@@ -4,16 +4,16 @@
     <h1>회원 리스트</h1>
     <thead>
     <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Title</th>
-        <th scope="col">Content</th>
+        <th scope="col">회원번호</th>
+        <th scope="col">이메일</th>
+        <th scope="col">비밀번호</th>
     </tr>
     </thead>
     <tbody>
     {{#members}}
         <tr>
             <th>{{id}}</th>
-            <td>{{email}}</td>
+            <td><a href="/members/{{id}}">{{email}}</a></td>
             <td>{{password}}</td>
         </tr>
     {{/members}}
