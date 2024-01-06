@@ -40,7 +40,7 @@ public class ArticleController {
         //System.out.println(article.toString());
         log.info(article.toString());
 
-        return "";
+        return "redirect:/articles";
     }
 
     @GetMapping("/articles/{id}") // 데이터 조회 요청 접수
