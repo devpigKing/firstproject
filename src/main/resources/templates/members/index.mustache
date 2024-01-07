@@ -7,6 +7,7 @@
         <th scope="col">회원번호</th>
         <th scope="col">이메일</th>
         <th scope="col">비밀번호</th>
+        <th scope="col">삭제</th>
     </tr>
     </thead>
     <tbody>
@@ -15,6 +16,7 @@
             <th>{{id}}</th>
             <td><a href="/members/{{id}}">{{email}}</a></td>
             <td>{{password}}</td>
+            <td><a href="/members/{{id}}/delete" class="btn btn-danger">삭제하기</a> </td>
         </tr>
     {{/members}}
     </tbody>
