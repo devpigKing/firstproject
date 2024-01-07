@@ -5,10 +5,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class SecondController {
+public class HomeController {
 
-    @GetMapping("/random-quote")
-    public String randomQuote(Model model) {
+    @GetMapping("/home")
+    public String home(Model model) {
         String[] quotes = {
                 "행복은 습관이다. 그것을 몸에 지니라. " +
                         "-허버드-",
@@ -24,6 +24,6 @@ public class SecondController {
 
         int randInt = (int) (Math.random()* quotes.length);
         model.addAttribute("randomQuote", quotes[randInt]);
-        return "random-quote";
+        return "/index";
     }
 }
