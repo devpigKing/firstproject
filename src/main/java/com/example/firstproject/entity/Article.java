@@ -2,6 +2,7 @@ package com.example.firstproject.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -9,6 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @NoArgsConstructor
+@Getter
 public class Article {
     @Id // 3. 엔티티의 대표값 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성. 기본키 생성은 DB가
@@ -19,6 +21,7 @@ public class Article {
 
     @Column // 2. content 필드 선언
     private String content;
+
 
 //    public Article(Long id, String title, String content) {
 //        this.id = id;

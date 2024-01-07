@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j // 로깅 기능을 위한 어노테이션 추가
 @Controller
@@ -62,5 +61,32 @@ public class ArticleController {
         model.addAttribute("articles", articles);
         // 3. 사용자에게 보여 줄 뷰 페이지 설정하기
         return "articles/index";
+    }
+
+    @GetMapping("/articles/{id}/edit")
+    public String edit(@PathVariable Long id, Model model) {
+        // 수정할 데이터 가져오기
+        Article articleEntity = articleRepository.findById(id).orElse(null); // DB에서 수정할 데이터 가져오기
+        // 모델에 데이터 등록하기
+        model.addAttribute("article", articleEntity);
+        // 뷰 페이지 설정하기
+        return "articles/edit";
+    }
+
+    @PostMapping("/articles/update")
+    public String update(ArticleForm form) { // 매개 변수로 DTO 받아오기
+        log.info(form.toString());
+        // 1. DTO를 엔티티로 변환하기
+        Article articleEntity = form.toEntity();
+        log.info(articleEntity.toString());
+        // 2. 엔티티를 DB에 저장하기
+        Article target = articleRepository.findById(articleEntity.getId()).orElse(null);
+
+        if (target != null) {
+            articleRepository.save(articleEntity);
+        }
+
+        // 3. 수정 결과 페이지로 리다이렉트하기
+        return "redirect:/articles/" + articleEntity.getId();
     }
 }
