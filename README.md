@@ -20,3 +20,8 @@
 
 ![image](https://github.com/devpigKing/firstproject/assets/137087678/b1ae75d4-6da8-4377-9dcc-a2403062b847)
 <br/>
+
+## (실습4) 회원 삭제 기능 
+
+https://github.com/devpigKing/firstproject/assets/137087678/14a09360-fd88-40c9-9fbe-2e88be0be058
+</br>
