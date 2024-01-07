@@ -23,10 +23,10 @@
 
 ## (실습4) 회원 삭제 기능 
 
-시연 영상
-https://github.com/devpigKing/firstproject/assets/137087678/14a09360-fd88-40c9-9fbe-2e88be0be058
 </br>
 ![image](https://github.com/devpigKing/firstproject/assets/137087678/26e7671d-0d23-46f2-8d22-3c5b38c48166)
 <br/>
 ![image](https://github.com/devpigKing/firstproject/assets/137087678/0136bb86-4d0c-4356-a2d5-cd1f820fd96e)
-
+<br/>
+시연 영상
+https://github.com/devpigKing/firstproject/assets/137087678/14a09360-fd88-40c9-9fbe-2e88be0be058
